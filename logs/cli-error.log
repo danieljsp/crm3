@@ -1,0 +1,182 @@
+2018-06-20 05:00:43 Warning: Warning (512): Association property name "contract" clashes with field of same name of table "leads". You should explicitly specify the "propertyName" option. in [/Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/ORM/Association.php, line 760]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\ORM\Association::getProperty() - CORE/src/ORM/Association.php, line 760
+Bake\Shell\Task\ModelTask::getEntityPropertySchema() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 580
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 136
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 113
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 100
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 272
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-06-20 05:00:45 Warning: Warning (512): Association property name "contract" clashes with field of same name of table "leads". You should explicitly specify the "propertyName" option. in [/Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/ORM/Association.php, line 760]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\ORM\Association::getProperty() - CORE/src/ORM/Association.php, line 760
+Bake\Utility\Model\AssociationFilter::filterAssociations() - ROOT/vendor/cakephp/bake/src/Utility/Model/AssociationFilter.php, line 96
+Bake\Shell\Task\TemplateTask::_filteredAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 433
+Bake\Shell\Task\TemplateTask::_loadController() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 301
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 142
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 272
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-06-26 06:16:48 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakeDc/Users could not be found. in /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 121
+Exception Attributes: array (
+  'plugin' => 'CakeDc/Users',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/Plugin.php(275): Cake\Core\PluginCollection->get('CakeDc/Users')
+#1 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Util/UtilTrait.php(71): Cake\Core\Plugin::path('CakeDc/Users')
+#2 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/ConfigurationTrait.php(65): Migrations\Command\Migrate->getOperationsPath(Object(Symfony\Component\Console\Input\ArgvInput))
+#3 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php(92): Migrations\Command\Migrate->getConfig()
+#4 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(64): Phinx\Console\Command\AbstractCommand->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 /Applications/MAMP/htdocs/crm2/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-06-26 06:22:13 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakeDC/Users could not be found. in /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 121
+Exception Attributes: array (
+  'plugin' => 'CakeDC/Users',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/Plugin.php(275): Cake\Core\PluginCollection->get('CakeDC/Users')
+#1 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Util/UtilTrait.php(71): Cake\Core\Plugin::path('CakeDC/Users')
+#2 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/ConfigurationTrait.php(65): Migrations\Command\Migrate->getOperationsPath(Object(Symfony\Component\Console\Input\ArgvInput))
+#3 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php(92): Migrations\Command\Migrate->getConfig()
+#4 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(64): Phinx\Console\Command\AbstractCommand->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 /Applications/MAMP/htdocs/crm2/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-06-26 06:22:30 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakeDC/Users could not be found. in /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 121
+Exception Attributes: array (
+  'plugin' => 'CakeDC/Users',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/Plugin.php(275): Cake\Core\PluginCollection->get('CakeDC/Users')
+#1 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Util/UtilTrait.php(71): Cake\Core\Plugin::path('CakeDC/Users')
+#2 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/ConfigurationTrait.php(65): Migrations\Command\Migrate->getOperationsPath(Object(Symfony\Component\Console\Input\ArgvInput))
+#3 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php(92): Migrations\Command\Migrate->getConfig()
+#4 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(64): Phinx\Console\Command\AbstractCommand->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 /Applications/MAMP/htdocs/crm2/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-06-26 06:22:47 Error: [Cake\Core\Exception\MissingPluginException] Plugin cakedc/users could not be found. in /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 121
+Exception Attributes: array (
+  'plugin' => 'cakedc/users',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Core/Plugin.php(275): Cake\Core\PluginCollection->get('cakedc/users')
+#1 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Util/UtilTrait.php(71): Cake\Core\Plugin::path('cakedc/users')
+#2 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/ConfigurationTrait.php(65): Migrations\Command\Migrate->getOperationsPath(Object(Symfony\Component\Console\Input\ArgvInput))
+#3 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/AbstractCommand.php(92): Migrations\Command\Migrate->getConfig()
+#4 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(64): Phinx\Console\Command\AbstractCommand->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 /Applications/MAMP/htdocs/crm2/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-06-26 06:26:16 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists in /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('CREATE TABLE `u...')
+#1 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(306): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `u...')
+#2 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/CakeAdapter.php(444): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Migrations\Table))
+#3 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(609): Migrations\CakeAdapter->createTable(Object(Migrations\Table))
+#4 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Table.php(90): Phinx\Db\Table->create()
+#5 /Applications/MAMP/htdocs/crm2/vendor/cakedc/users/config/Migrations/20150513201111_initial.php(87): Migrations\Table->create()
+#6 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): Initial->change()
+#7 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up')
+#8 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up')
+#9 /Applications/MAMP/htdocs/crm2/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20161031101316)
+#10 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Applications/MAMP/htdocs/crm2/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /Applications/MAMP/htdocs/crm2/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 /Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#21 /Applications/MAMP/htdocs/crm2/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#22 {main}
+
+
+2018-06-26 06:26:16 Warning: The connection is going to be closed but there is an active transaction.
+2018-06-26 06:26:16 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Applications/MAMP/htdocs/crm2/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 135
+[main] - [internal], line ??
+
+
+
